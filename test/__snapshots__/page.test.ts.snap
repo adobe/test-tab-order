@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should print to console the elements if they are not passed 1`] = `
+Array [
+  "The \\"elements\\" prop was not passed, so we went ahead and grabbed them for you:
+",
+  Array [
+    "[data-testid=click-me-button]",
+    "[data-testid=ok-button]",
+    "[data-testid=this-page-link]",
+    "[data-testid=username-input]",
+    "[data-testid=password-input]",
+    "[data-testid=submit-button]",
+    "[data-testid=yes-no-select]",
+    "[data-testid=button-as-span]",
+    "[data-testid=comments-textarea]",
+  ],
+]
+`;
+
+exports[`should show an error if elements are not passed and maxTabStops is too small 1`] = `"We are generating selectors but we did not reach the end of the page. Consider increasing maxTabStopsCount currently at 2"`;
+
+exports[`should show warning if focus is lost less than maxRetriesCount allows 1`] = `
+Array [
+  "Lost focus when checking [data-testid=click-me-button]. Retrying.",
+]
+`;
+
+exports[`should throw an error if tab order is not correct 1`] = `"Expected element \\"[data-testid=this-page-link]\\" but found \\"[data-testid=ok-button]\\""`;
+
+exports[`should throw error if focus is lost more than maxRetriesCount allows 1`] = `"Focused was lost for some reason and the maxRetriesCount was exceeded."`;

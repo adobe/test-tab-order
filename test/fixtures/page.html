@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 data-testid="first-level-header">Tests</h1>
+    <h2 data-testid="second-level-header">Tabbable Elements</h2>
+    <button data-testid="click-me-button">Click me</button>
+    <button data-testid="ok-button">Ok</button>
+    <a href="#" data-testid="this-page-link">Go here...</a>
+
+    <form>
+      <div>
+        <label for="username-input" data-testid="username-label"
+          >Username</label
+        >
+        <input type="text" data-testid="username-input" id="username-input" />
+      </div>
+      <div>
+        <label for="password-input" data-testid="password-label"
+          >Password</label
+        >
+        <input
+          type="password"
+          data-testid="password-input"
+          id="password-input"
+        />
+      </div>
+      <input type="submit" value="Go" data-testid="submit-button" />
+    </form>
+    <div>
+      <select data-testid="yes-no-select">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+    <div>
+      <span role="button" tabindex="0" data-testid="button-as-span"
+        >Button as span</span
+      >
+    </div>
+    <label for="comments-textarea">Review:</label>
+    <textarea
+      id="comments-textarea"
+      data-testid="comments-textarea"
+      placeholder="Leave your comments here"
+    ></textarea>
+  </body>
+</html>
